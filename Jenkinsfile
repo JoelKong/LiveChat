@@ -19,14 +19,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Build Docker images
-                sh 'docker-compose -f docker-compose.yml build'
+                bat 'docker-compose -f docker-compose.yml build'
             }
         }
 
         stage('Deploy') {
             steps {
                 // Start Docker containers
-                sh 'docker-compose -f docker-compose.yml up -d'
+                bat 'docker-compose -f docker-compose.yml up -d'
             }
         }
     }
