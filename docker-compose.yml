@@ -4,7 +4,7 @@ services:
   nextjs-container:
     build:
       context: ./website
-      dockerfile: Dockerfile.website
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
 
