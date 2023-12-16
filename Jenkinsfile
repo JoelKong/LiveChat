@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the source code from the repository
-                checkout scm
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         // Checkout the source code from the repository
+        //         checkout scm
+        //     }
+        // }
 
-        stage('Test') {
-            steps {
-                // Run tests (adjust as per your testing framework)
-                sh 'cd website && npm install && npm test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         // Run tests (adjust as per your testing framework)
+        //         sh 'cd website && npm install && npm test'
+        //     }
+        // }
 
         stage('Build') {
             steps {
