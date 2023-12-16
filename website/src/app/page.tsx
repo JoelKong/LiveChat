@@ -39,7 +39,7 @@ export default function Home() {
       </Link>
       <section className="relative w-screen h-screen">
         <Landing setChatActive={setChatActive} />
-        {chatActive && <Chat />}
+        {chatActive && <Chat setChatActive={setChatActive} />}
       </section>
     </>
   );

@@ -10,7 +10,7 @@ export default function Landing({ setChatActive }: any): JSX.Element {
           integration
         </p>
         <button
-          className="mt-8 bg-blue-300 rounded-lg w-40 h-12 text-black text-xl tracking-wide shadow-2xl hover:bg-blue-400 font-semibold"
+          className="mt-8 bg-blue-300 rounded-lg w-40 h-12 text-black text-xl tracking-wide shadow-2xl hover:bg-blue-400 font-semibold hover:scale-110 transition-all ease-in-out"
           onClick={() => setChatActive(true)}
         >
           Enter chat
