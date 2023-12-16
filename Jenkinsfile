@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        JENKINS_URL = 'http://localhost:8080/'
+    }
+
     stages {
         stage('Checkout') {
             steps {
