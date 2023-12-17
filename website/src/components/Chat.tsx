@@ -12,8 +12,8 @@ export default function Chat({ setChatActive }: any): JSX.Element {
   const chatContainerRef = useRef<any>(null);
 
   async function readDatabase() {
-    let { data: chat, error } = await supabase.from("chat").select("*");
-    setMessages(chat);
+    let { data }: any = await supabase.from("chat").select("*");
+    setMessages(data);
   }
 
   async function sendMessage(e: any) {
