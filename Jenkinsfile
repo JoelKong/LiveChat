@@ -22,10 +22,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('website') {
-                    bat 'npm install'
-                    bat 'npm run build'
-                }
+                // dir('website') {
+                //     bat 'npm install'
+                //     bat 'npm run build'
+                // }
                 // Build Docker images
                 bat 'docker-compose -f docker-compose.yml build'
             }
