@@ -1,12 +1,21 @@
 version: "3"
 
 services:
+  express-server-container:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+
   nextjs-container:
     build:
       context: ./website
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    depends_on:
+      - express-server-container
 
   nginx-container:
     image: nginx:latest
@@ -16,3 +25,4 @@ services:
       - "80:80"
     depends_on:
       - nextjs-container
+      - express-server-container
