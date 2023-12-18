@@ -27,4 +27,4 @@ services:
       - "80:80"
     depends_on:
       - nextjs-container
-      - express-container
+      - express-server-container
