@@ -18,11 +18,13 @@ services:
       - express-server-container
 
   nginx-container:
-    image: nginx:latest
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - "80:80"
     depends_on:
       - nextjs-container
-      - express-server-container
+      - express-container
