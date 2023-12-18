@@ -31,3 +31,6 @@ Consists of 3 images/containers namely, one for nextjs, another for express and 
 A pipeline is built in order to facilitate the automation of testing if needed, building of the containers and running it.
 
 ![jenkins](/assets/jenkins.PNG)
+
+## How to run locally
+Due to cost constraints, I did not deploy it on the cloud. However, you can run it locally by cloning the repository and just setup a new jenkin pipeline using github scm and run the jenkinsfile, or you could just do docker-compose up.
