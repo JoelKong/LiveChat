@@ -7,7 +7,7 @@ An aesthetic realtime chat that focuses on Devops concepts and apply what i lear
 ### Technology Stack
 Front-End: NextJS (TypeScript)  
 Back-End: NodeJS, ExpressJS (Websocket Server)  
-Database: Supabase
+Database: Supabase  
 Tools used: TailwindCSS, Socketio for websocket, NGINX for reverse proxy, Docker to containerize and isolate the servers, Jenkins for CICD  
 Future considerations: Deploy containers on EC2 instances ($$$), kubernetes for scaling and healing if there are more containers, Git webhook for CICD so production will be rebuilt automatically when pushed to main (if domain is used)
 
